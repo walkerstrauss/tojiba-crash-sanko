@@ -19,6 +19,17 @@
   <div id="log"></div>
 
   <script src="../assets/js/lib/prototype-1.6.0.2.js"></script>
+  <script src="../assets/js/lib/Box2dWeb-2.1.a.3.js"></script>
+  <script>
+    let running = true,
+      canvas = null,
+      ctx = null,
+      world = Box2d.Dynamics.b2World(new Box2D.Common.Math.b2Vec2(0, 6), true)
+    drawScale = 20,
+      player = null,
+      floor = null,
+      viewportX = 0
+  </script>
 </body>
 
 </html>
